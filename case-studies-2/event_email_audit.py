@@ -1,3 +1,5 @@
+from string import whitespace
+
 registrations = [
     "taylorswift@gmail.com",
     "gracieabrams@gmail.com",
@@ -75,8 +77,3 @@ print(f"VIP Guests Present          | {totalVipGuestsPresent}")
 print("--------------------------------------------------")
 print(f"Attendance Rate             : {attendanceRate:.2f}%")
 print("--------------------------------------------------")
-print(f"Email Registration Status   : {'YES' if isRegistered else 'NO'}")
-print(f"Email Check-in Status       : {'YES' if isCheckedIn else 'NO'}")
-print(f"Email VIP Status            : {'YES' if isVip else 'NO'}")
-print(f"Entry Status                : {entryStatus}")
-print("====================================================")

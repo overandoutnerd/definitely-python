@@ -77,6 +77,6 @@ for productId in storeInventory:
 
 print("----------------------------------------------------------")
 print(f"Purchase Status           : {purchaseStatus}")
-print(f"Total Inventory Valuation : ${totalValue:,.2f}")
+print(f"Total Inventory Valuation : ${totalValue:.2f}")
 print(f"Low Stock Items Count     : {lowStockCount}")
 print("----------------------------------------------------------")

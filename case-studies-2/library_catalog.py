@@ -13,12 +13,6 @@ library = {
     }
 }
 
-booksCopies = {
-    "B101": 12,
-    "B102": 24,
-    "B103": 3,
-}
-
 availableBooks = {"B101", "B102", "B103"}
 issuedBooks = set()
 
@@ -64,11 +58,11 @@ availableCopies = len(availableBooks)
 issuedCopies = len(issuedBooks)
 
 
-print("\n==========================================================")
+print("\n====================================================")
 print("        LIBRARY CATALOG STATUS DASHBOARD")
-print("==========================================================")
-print("ID     | Book Title                   | Status")
-print("----------------------------------------------------------")
+print("====================================================")
+print("ID     | Book Title            | Status")
+print("--------------------------------------------------")
 
 for bookId in library:
     title = library[bookId]["title"]
@@ -76,13 +70,13 @@ for bookId in library:
     if bookId in availableBooks:
         status = "AVAILABLE"
     else:
-        status = "NOT AVAILABLE"
+        status = "ISSUED"
 
-    print(f"{bookId:<6} | {title:<28} | {status}")
+    print(f"{bookId:<6} | {title:<21} | {status}")
 
-print("----------------------------------------------------------")
+print("--------------------------------------------------")
 print(f"Total Catalog Books   : {totalBooks}")
 print(f"Available Copies      : {availableCopies}")
 print(f"Issued Copies         : {issuedCopies}")
 print(f"Operation Status      : {operationStatus}")
-print("==========================================================")
+print("====================================================")
